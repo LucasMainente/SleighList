@@ -1,0 +1,54 @@
+﻿<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SleighList</title>
+
+</head>
+<body>
+    <div class="header">
+        <button onclick="window.history.back();">&#8592; Voltar</button>
+        <h1>SleighList</h1>
+    </div>
+
+    <div class="container">
+        <h2>Cadastro De Item</h2>
+        <form id="itemForm">
+            <input type="text" placeholder="Nome" id="itemName" required />
+            <input type="number" placeholder="Preço por unidade" id="itemPrice" required />
+            <input type="number" placeholder="Quantidade" id="itemQuantity" required />
+            <button type="submit">Cadastrar</button>
+        </form>
+    </div>
+
+    <div class="container">
+        <h2>Lista De Itens</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Nome</th>
+                    <th>Quantidade</th>
+                    <th>Preço por unidade</th>
+                    <th>Editar</th>
+                    <th>Excluir</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Árvore de Natal</td>
+                    <td>1</td>
+                    <td>R$40,00</td>
+                    <td class="actions"><img src="edit-icon.png" alt="Editar" /></td>
+                    <td class="actions"><img src="delete-icon.png" alt="Excluir" /></td>
+                </tr>
+                <!-- Repita linhas conforme necessário -->
+            </tbody>
+        </table>
+    </div>
+
+    <div class="footer">
+        &copy; 2024 - SEDUC - SleighList
+    </div>
+</body>
+</html>
